@@ -22,3 +22,8 @@ class XCMLParser:
             except:
                 raise IOError("Malformed filename or value for data:\n"
                               + xcmlValue)
+
+
+test = XCMLParser('test.xml')
+
+print test.root
