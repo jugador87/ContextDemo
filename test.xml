@@ -1,0 +1,26 @@
+<xcml:contextmodel xmlns:xcml="nsplaceholder">
+	<xcml:context-dimension	name="Fitbit">
+		<xcml:context-key	name="stepsPerMinute"/>
+		<xcml:context-key	name="movementIntensity"/> 
+		<xcml:context-key	name="timestamp"/> 
+	</xcml:context-dimension> 
+
+	<xcml:context-state name="0" dimention="Fitbit">
+		<xcml:context-property key="timestamp" value="00:00:00"/>
+		<xcml:context-property key="stepsPerMinute" value="0"/>
+	</xcml:context-state>
+
+	<xcml:context-state	name="1"	dimension="Fitbit"> 
+		<xcml:context-property	key="timestamp"	value="00:01:00"/>
+		<xcml:context-property	key="stepsPerMinute"	value="0"/> 
+		<xcml:context-property	key="movementIntensity"	value="0"/> 
+	</xcml:context-state> 
+
+	<!--1440 minutes in a day-->
+
+	<xcml:context-state	name="1439"	dimension="Fitbit"> 
+		<xcml:context-property	key="timestamp"	value="23:59:00"/>
+		<xcml:context-property	key="stepsPerMinute"	value="0"/> 
+		<xcml:context-property	key="movementIntensity"	value="0"/> 
+	</xcml:context-state> 
+</xcml:contextmodel>
